@@ -48,7 +48,7 @@
             </form>            
           </div>
           <div class="col s3">
-            <a class="waves-effect waves-light btn" href="#modal1"><i class="material-icons right">add</i>Nuevo</a>
+            <a class="waves-effect waves-light btn" href="#agregarPrestador"><i class="material-icons right">add</i>Agregar</a>
           </div>
         </div>
         <table class="bordered highlight">
@@ -59,7 +59,6 @@
                 <th data-field="universidad">Universidad</th>
                 <th data-field="equipo-escuela">Equipo</th>
                 <th data-field="escuela">Escuela</th>
-                <th data-field="horas">Horas</th>
             </tr>
           </thead>
 
@@ -70,7 +69,10 @@
               <td>Tec</td>
               <td>5</td>
               <td>Alonso de León</td>
-              <td>87</td>
+              <td>
+                <a class="waves-effect waves-light btn blue darken-2" href="#modal2">Modificar</a>
+                <a class="waves-effect waves-light btn blue darken-2" href="#modal2">Ver alumno</a>
+              </td>
             </tr>
             <tr>
               <td>A00818137</td>
@@ -78,7 +80,10 @@
               <td>UDEM</td>
               <td>6</td>
               <td>Miguel Hidalgo</td>
-              <td>90</td>
+              <td>
+                <a class="waves-effect waves-light btn blue darken-2" href="#modal2">Modificar</a>
+                <a class="waves-effect waves-light btn blue darken-2" href="#modal2">Ver alumno</a>
+              </td>
             </tr>
             <tr>
               <td>A01187313</td>
@@ -86,7 +91,10 @@
               <td>Tec</td>
               <td>5</td>
               <td>Alonso de León</td>
-              <td>90</td>
+              <td>
+                <a class="waves-effect waves-light btn blue darken-2" href="#modal2">Modificar</a>
+                <a class="waves-effect waves-light btn blue darken-2" href="#modal2">Ver alumno</a>
+              </td>
             </tr>
             <tr>
               <td>A00818934</td>
@@ -94,7 +102,10 @@
               <td>UDEM</td>
               <td>1</td>
               <td>Guadalupe Victoria</td>
-              <td>85</td>
+              <td>
+                <a class="waves-effect waves-light btn blue darken-2" href="#modal2">Modificar</a>
+                <a class="waves-effect waves-light btn blue darken-2" href="#modal2">Ver alumno</a>
+              </td>
             </tr>
             
           </tbody>
@@ -108,19 +119,19 @@
     <div class="section">
 
   <!-- Modal Structure -->
-  <div id="modal1" class="modal">
+  <div id="agregarPrestador" class="modal">
     <div class="modal-content">
       <h4>Modal Header</h4>
       <div class="row">
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
-          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
+          <input placeholder="Nombre" id="nombre" type="text" class="validate">
+          <label for="nombre">Nombre</label>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
+          <input id="apellido" type="text" class="validate">
+          <label for="apellido">Apellido</label>
         </div>
       </div>
       <div class="row">
@@ -159,6 +170,9 @@
   </div>
   </div>
   </div>
+
+
+
 
   <footer class="page-footer blue accent-2">
     <div class="container">
