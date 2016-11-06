@@ -49,7 +49,7 @@
             </form>            
           </div>
           <div class="col s3">
-            <a class="waves-effect waves-light btn" href="#modal1"><i class="material-icons right">add</i>Agregar</a>
+            <a class="waves-effect waves-light btn" href="#agregarEscuelas"><i class="material-icons right">add</i>Agregar</a>
           </div>
         </div>
         <table class="bordered highlight">
@@ -66,19 +66,19 @@
               <td>Alonso de León</td>
               <td>Martes</td>
               <td>4:00 P.M. - 6:00 P.M.</td>
-              <td><a class="waves-effect waves-light btn blue darken-2" href="#modal2">Modificar</a></td>
+              <td><a class="waves-effect waves-light btn blue darken-2" href="#modificarEscuelas">Modificar</a></td>
             </tr>
             <tr>
               <td>Niños Heroes</td>
               <td>Sábado</td>
               <td>9:00 A.M. - 12:00 P.M.</td>
-              <td><a class="waves-effect waves-light btn blue darken-2" href="#modal2">Modificar</a></td>
+              <td><a class="waves-effect waves-light btn blue darken-2" href="#modificarEscuelas">Modificar</a></td>
             </tr>    
             <tr>
               <td>20 de Noviembre</td>
               <td>Viernes</td>
               <td>2:00 P.M. - 4:00 P.M.</td>
-              <td><a class="waves-effect waves-light btn blue darken-2" href="#modal2">Modificar</a></td>
+              <td><a class="waves-effect waves-light btn blue darken-2" href="#modificarEscuelas">Modificar</a></td>
             </tr>
           </tbody>
         </table>
@@ -90,56 +90,260 @@
   <div class="container">
     <div class="section">
 
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
+   <!-- Modal Structure -->
+  <div id="agregarEscuelas" class="modal">
     <div class="modal-content">
-      <h4>Modal Header</h4>
+      <h4>Agregar Escuela</h4>
       <div class="row">
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
-          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
+          <input placeholder="Nombre de la escuela" id="nombre_argregar" type="text" class="validate">
+          <label for="nombre_argregar">Nombre de la escuela</label>
         </div>
+         <div class="input-field col s6">
+          <select multiple>
+            <option value="" disabled selected>Día</option>
+            <option value="Lunes">Lunes</option>
+            <option value="Martes">Martes</option>
+            <option value="Miércoles">Miércoles</option>
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+            <option value="Sábado">Sábado</option>
+            <option value="Domingo">Domingo</option>
+          </select>
+          <label>Día</label>
+    </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s3">
+          <select>
+            <option value="" disabled selected>Hora</option>
+            <option value="modificar_hora_hasta_01">0</option>
+            <option value="modificar_hora_hasta_1">1</option>
+            <option value="modificar_hora_hasta_2">2</option>
+            <option value="modificar_hora_hasta_3">3</option>
+            <option value="modificar_hora_hasta_4">4</option>
+            <option value="modificar_hora_hasta_5">5</option>
+            <option value="modificar_hora_hasta_6">6</option>
+            <option value="modificar_hora_hasta_7">7</option>
+            <option value="modificar_hora_hasta_8">8</option>
+            <option value="modificar_hora_hasta_9">9</option>
+            <option value="modificar_hora_hasta_10">10</option>
+            <option value="modificar_hora_hasta_11">11</option>
+            <option value="modificar_hora_hasta_12">12</option>
+            <option value="modificar_hora_hasta_13">13</option>
+            <option value="modificar_hora_hasta_14">14</option>
+            <option value="modificar_hora_hasta_15">15</option>
+            <option value="modificar_hora_hasta_16">16</option>
+            <option value="modificar_hora_hasta_17">17</option>
+            <option value="modificar_hora_hasta_18">18</option>
+            <option value="modificar_hora_hasta_19">19</option>
+            <option value="modificar_hora_hasta_10">20</option>
+            <option value="modificar_hora_hasta_21">21</option>
+            <option value="modificar_hora_hasta_22">22</option>
+            <option value="modificar_hora_hasta_23">23</option>
+
+          </select>
+          <label>Desde</label>
+    </div>
+    <div class="input-field col s3">
+          <select>
+            <option value="" disabled selected>Minutos</option>
+            <option value="modificar_hora_hasta_00">00</option>
+            <option value="modificar_hora_hasta_15">15</option>
+            <option value="modificar_hora_hasta_30">30</option>
+            <option value="modificar_hora_hasta_45">45</option>
+          </select>
+    </div>
+    <div class="input-field col s3">
+          <select>
+            <option value="" disabled selected>Hora</option>
+            <option value="modificar_hora_hasta_01">0</option>
+            <option value="modificar_hora_hasta_1">1</option>
+            <option value="modificar_hora_hasta_2">2</option>
+            <option value="modificar_hora_hasta_3">3</option>
+            <option value="modificar_hora_hasta_4">4</option>
+            <option value="modificar_hora_hasta_5">5</option>
+            <option value="modificar_hora_hasta_6">6</option>
+            <option value="modificar_hora_hasta_7">7</option>
+            <option value="modificar_hora_hasta_8">8</option>
+            <option value="modificar_hora_hasta_9">9</option>
+            <option value="modificar_hora_hasta_10">10</option>
+            <option value="modificar_hora_hasta_11">11</option>
+            <option value="modificar_hora_hasta_12">12</option>
+            <option value="modificar_hora_hasta_13">13</option>
+            <option value="modificar_hora_hasta_14">14</option>
+            <option value="modificar_hora_hasta_15">15</option>
+            <option value="modificar_hora_hasta_16">16</option>
+            <option value="modificar_hora_hasta_17">17</option>
+            <option value="modificar_hora_hasta_18">18</option>
+            <option value="modificar_hora_hasta_19">19</option>
+            <option value="modificar_hora_hasta_10">20</option>
+            <option value="modificar_hora_hasta_21">21</option>
+            <option value="modificar_hora_hasta_22">22</option>
+            <option value="modificar_hora_hasta_23">23</option>
+
+          </select>
+          <label>Hasta</label>
+    </div>
+    <div class="input-field col s3">
+          <select>
+            <option value="" disabled selected>Minutos</option>
+            <option value="modificar_hora_hasta_00">00</option>
+            <option value="modificar_hora_hasta_15">15</option>
+            <option value="modificar_hora_hasta_30">30</option>
+            <option value="modificar_hora_hasta_45">45</option>
+          </select>
+    </div>
+      </div>
+
+      <div class="row" align = "center">
+        <div class="col s6">
+          <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #448aff blue darken-2">Agregar </a>
+        </div>
+        <div class="col s6">
+          <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #d84315 deep-orange darken-3">Cancelar</a>
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+ <!-- Modal Structure -->
+  <div id="modificarEscuelas" class="modal">
+    <div class="modal-content">
+      <h4>Modificar Escuela</h4>
+      <div class="row">
+    <form class="col s12">
+      <div class="row">
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
+          <input placeholder="Nombre de la escuela" id="nombre_argregar" type="text" class="validate">
+          <label for="nombre_argregar">Nombre de la escuela</label>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-          <label for="disabled">Disabled</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12">
-          This is an inline input field:
-          <div class="input-field inline">
-            <input id="email" type="email" class="validate">
-            <label for="email" data-error="wrong" data-success="right">Email</label>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
+         <div class="input-field col s6">
+          <select multiple>
+            <option value="" disabled selected>Día</option>
+            <option value="Lunes">Lunes</option>
+            <option value="Martes">Martes</option>
+            <option value="Miércoles">Miércoles</option>
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+            <option value="Sábado">Sábado</option>
+            <option value="Domingo">Domingo</option>
+          </select>
+          <label>Día</label>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s3">
+          <select>
+            <option value="" disabled selected>Hora</option>
+            <option value="modificar_hora_hasta_01">0</option>
+            <option value="modificar_hora_hasta_1">1</option>
+            <option value="modificar_hora_hasta_2">2</option>
+            <option value="modificar_hora_hasta_3">3</option>
+            <option value="modificar_hora_hasta_4">4</option>
+            <option value="modificar_hora_hasta_5">5</option>
+            <option value="modificar_hora_hasta_6">6</option>
+            <option value="modificar_hora_hasta_7">7</option>
+            <option value="modificar_hora_hasta_8">8</option>
+            <option value="modificar_hora_hasta_9">9</option>
+            <option value="modificar_hora_hasta_10">10</option>
+            <option value="modificar_hora_hasta_11">11</option>
+            <option value="modificar_hora_hasta_12">12</option>
+            <option value="modificar_hora_hasta_13">13</option>
+            <option value="modificar_hora_hasta_14">14</option>
+            <option value="modificar_hora_hasta_15">15</option>
+            <option value="modificar_hora_hasta_16">16</option>
+            <option value="modificar_hora_hasta_17">17</option>
+            <option value="modificar_hora_hasta_18">18</option>
+            <option value="modificar_hora_hasta_19">19</option>
+            <option value="modificar_hora_hasta_10">20</option>
+            <option value="modificar_hora_hasta_21">21</option>
+            <option value="modificar_hora_hasta_22">22</option>
+            <option value="modificar_hora_hasta_23">23</option>
+
+          </select>
+          <label>Desde</label>
+    </div>
+    <div class="input-field col s3">
+          <select>
+            <option value="" disabled selected>Minutos</option>
+            <option value="modificar_hora_hasta_00">00</option>
+            <option value="modificar_hora_hasta_15">15</option>
+            <option value="modificar_hora_hasta_30">30</option>
+            <option value="modificar_hora_hasta_45">45</option>
+          </select>
+    </div>
+    <div class="input-field col s3">
+          <select>
+            <option value="" disabled selected>Hora</option>
+            <option value="modificar_hora_hasta_01">0</option>
+            <option value="modificar_hora_hasta_1">1</option>
+            <option value="modificar_hora_hasta_2">2</option>
+            <option value="modificar_hora_hasta_3">3</option>
+            <option value="modificar_hora_hasta_4">4</option>
+            <option value="modificar_hora_hasta_5">5</option>
+            <option value="modificar_hora_hasta_6">6</option>
+            <option value="modificar_hora_hasta_7">7</option>
+            <option value="modificar_hora_hasta_8">8</option>
+            <option value="modificar_hora_hasta_9">9</option>
+            <option value="modificar_hora_hasta_10">10</option>
+            <option value="modificar_hora_hasta_11">11</option>
+            <option value="modificar_hora_hasta_12">12</option>
+            <option value="modificar_hora_hasta_13">13</option>
+            <option value="modificar_hora_hasta_14">14</option>
+            <option value="modificar_hora_hasta_15">15</option>
+            <option value="modificar_hora_hasta_16">16</option>
+            <option value="modificar_hora_hasta_17">17</option>
+            <option value="modificar_hora_hasta_18">18</option>
+            <option value="modificar_hora_hasta_19">19</option>
+            <option value="modificar_hora_hasta_10">20</option>
+            <option value="modificar_hora_hasta_21">21</option>
+            <option value="modificar_hora_hasta_22">22</option>
+            <option value="modificar_hora_hasta_23">23</option>
+
+          </select>
+          <label>Hasta</label>
+    </div>
+    <div class="input-field col s3">
+          <select>
+            <option value="" disabled selected>Minutos</option>
+            <option value="modificar_hora_hasta_00">00</option>
+            <option value="modificar_hora_hasta_15">15</option>
+            <option value="modificar_hora_hasta_30">30</option>
+            <option value="modificar_hora_hasta_45">45</option>
+          </select>
+    </div>
+      </div>
+
+       <div class="row" align = "center">
+      <div class="col s4">
+        <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #448aff blue darken-2">Modificar</a>
+      </div>
+      <div class="col s4">
+        <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #d84315 deep-orange darken-3">Eliminar</a>
+      </div>
+      <div class="col s4">
+        <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #d84315 deep-orange darken-3">Cancelar</a>
+      </div>
     </div>
   </div>
+  </div>
+  </div>
+
+
+   <!--   Icon Section   -->
+    
+    <br><br>
+
+    <div class="section">
+
+    </div>
   </div>
   </div>
 
