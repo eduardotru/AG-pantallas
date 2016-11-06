@@ -12,29 +12,70 @@
 </head>
 <body>
   <nav class="blue accent-2" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><img src="logo.jpeg" style="width:80px;height:auto;"/></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li class="active"><a href="actividades.html">Actividades</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="prestadores.html">Prestadores de Servicio</a></li>
+        <li><a href="universidades.html">Universidades</a></li>
+        <li><a href="escuelas.html">Escuelas</a></li>
+        <li><a href="mesa.html">Mesa directiva</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li class="active"><a href="actividades.html">Actividades</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="prestadores.html">Prestadores de Servicio</a></li>
+        <li><a href="universidades.html">Universidades</a></li>
+        <li><a href="escuelas.html">Escuelas</a></li>
+        <li><a href="mesa.html">Mesa directiva</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
+ <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Starter Template</h1>
+      <h1 class="header center indigo-text">Actividades</h1>
       <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-      </div>
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
-      <br><br>
+        <div class="row">
+          <div class="col s9">
+            <form>
+              <div class="input-field">
+                <input id="search" type="search" required>
+                <label for="search"><i class="material-icons prefix">search</i></label>
+              </div>
+            </form>            
+          </div>
+          <div class="col s3">
+            <a class="waves-effect waves-light btn" href="#modal1"><i class="material-icons right">add</i>Agregar</a>
+          </div>
 
+        </div>
+        <table class="bordered highlight">
+          <thead>
+            <tr>
+                <th data-field="nombre">Nombre</th>
+                <th data-field="revisado">Revisado</th>
+                <th data-field="forma-calificar"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Presentación de los valores de la semana</td>
+              <td><i class="material-icons">check</i></td>
+              <td><a class="waves-effect waves-light btn blue lighten-3" href="#calificarActividades">Calificar</a></td>
+              <td><a class="waves-effect waves-light btn blue darken-2" href="#modal2">Modificar</a></td>
+            </tr>
+            <tr>
+              <td>Investigación de cuentos</td>
+              <td><i class="material-icons">close</i></td>
+              <td><a class="waves-effect waves-light btn blue darken-2" href="#calificarActividades">Calificar</a></td>
+              <td><a class="waves-effect waves-light btn blue darken-2" href="#modal2">Modificar</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 
@@ -42,8 +83,6 @@
   <div class="container">
     <div class="section">
 
-<!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn" href="#modal1">Crear Actividades</a>
 
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
@@ -91,8 +130,6 @@
   </div>
 
 
-<!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn" href="#modal2">Modificar Actividades</a>
 
   <!-- Modal Structure -->
   <div id="modal2" class="modal">
@@ -142,8 +179,7 @@
     </div>
   </div>
 
-<!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn" href="#modal3">Crear Evento</a>
+
 
   <!-- Modal Structure -->
   <div id="modal3" class="modal">
@@ -194,9 +230,6 @@
     </div>
   </div>
 
-
-<!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn" href="#modal4">Modificar Evento</a>
 
   <!-- Modal Structure -->
   <div id="modal4" class="modal">
@@ -252,76 +285,136 @@
     </div>
   </div>
 
-      <!--   Icon Section   -->
+  <!-- Modal Structure -->
+  <div id="calificarActividades" class="modal">
+    <div class="modal-content">
+      <h4>Calificar actividades</h4>
       <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6 ">
+          <input disabled value="Actividad #1" placeholder="Nombre de la actividad" id="nombre_actividad" type="text" class="validate">
+          <label for="nombre_actividad">Nombre de la actividad</label>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
+        <div class="input-field col s6">
+          <input disabled value="100" placeholder="Calificación" id="Escala_calificacion" type="text" class="validate">
+          <label for="Escala_calificacion">Calificación máxima</label>
         </div>
       </div>
+      <div class="row">
+        <div class="input-field col s12" >
+            <textarea id="descripcion_actividad" disabled value="" class="materialize-textarea" class="validate">Esta es la primera actividad del semestre en la que los prestadores de servicio tendrán la oportunidad para plaear sus actividades de todo el semestre.</textarea>
+            <label for="descripcion_actividad">Descripción de la actividad</label>
+          </div>
+      </div>
+      <table class="bordered highlight">
+          <thead>
+            <tr>
+                <th data-field="matricula">Matrícula</th>
+                <th data-field="nombre">Nombre</th>
+                <th data-field="universidad">Universidad</th>
+                <th data-field="equipo-escuela">Equipo</th>
+                <th data-field="escuela">Escuela</th>
+                <th data-field="horas">Calificación</th>
+            </tr>
+          </thead>
 
+          <tbody>
+            <tr>
+              <td>A01153980</td>
+              <td>Esteban Arocha Ortuño</td>
+              <td>Tec</td>
+              <td>5</td>
+              <td>Alonso de León</td>
+              <td>
+                  <div class="input-field col s6">
+                      <input placeholder="" id="Escala_calificacion" type="text" class="validate">
+                      <label for="Escala_calificacion"></label>
+                  </div>
+              </td>
+            </tr>
+            <tr>
+              <td>A00818137</td>
+              <td>René Garcia Saenz</td>
+              <td>UDEM</td>
+              <td>6</td>
+              <td>Miguel Hidalgo</td>
+              <td>
+                <div class="input-field col s6">
+                      <input placeholder="" id="Escala_calificacion" type="text" class="validate">
+                      <label for="Escala_calificacion"></label>
+                  </div>
+              </td>
+            </tr>
+            <tr>
+              <td>A01187313</td>
+              <td>Eduardo Enrique Trujillo Ramos</td>
+              <td>Tec</td>
+              <td>5</td>
+              <td>Alonso de León</td>
+              <td>
+                <div class="input-field col s6">
+                      <input placeholder="" id="Escala_calificacion" type="text" class="validate">
+                      <label for="Escala_calificacion"></label>
+                  </div>
+              </td>
+            </tr>
+            <tr>
+              <td>A00818934</td>
+              <td>Gerardo Aldair Ponce Gomez</td>
+              <td>UDEM</td>
+              <td>1</td>
+              <td>Guadalupe Victoria</td>
+              <td>
+                <div class="input-field col s6">
+                      <input placeholder="" id="Escala_calificacion" type="text" class="validate">
+                      <label for="Escala_calificacion"></label>
+                  </div>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+    </form>
+  </div>
     </div>
+    <div class="row" align = "center">
+      <div class="col s6">
+        <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #448aff blue accent-2">Guardar</a>
+      </div>
+      <div class="col s6">
+        <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #d84315 deep-orange darken-3">Cancelar</a>
+      </div>
+    </div>
+  </div>
+
+
+      <!--   Icon Section   -->
+    
     <br><br>
 
     <div class="section">
 
     </div>
   </div>
+  </div>
 
-  <footer class="page-footer orange">
+  <footer class="page-footer blue accent-2">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="white-text">Águilas Guadalupanas</h5>
+          <p class="grey-text text-lighten-4">La misión de Águilas guadalupanas es...</p>
 
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
+        
+        
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Powered by <a class="orange-text text-lighten-3" href="http://materializecss.com">TechLabs</a>
       </div>
     </div>
   </footer>
