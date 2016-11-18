@@ -97,7 +97,7 @@
         <div class="row">
             <div class="horasTotales">
                 <h5 class="blue-text">Horas totales</h5>
-                <p>20</p>
+                <h3>20</h3>
             </div>
         </div>
         <div class="row">
@@ -153,142 +153,128 @@
     <div class="section">
 
   <!-- Modal Structure -->
-  <div id="modificarPrestador" class="modal">
-    <div class="modal-content">
-      <h4>Modificar prestador de servicio</h4>
-      <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="Nombre" id="modificar_nombre" type="text" class="validate">
-          <label for="modificar_nombre">Nombre</label>
-        </div>
-        <div class="input-field col s6">
-          <input placeholder="Apellidos" id="modificar_apellido" type="text" class="validate">
-          <label for="modificar_apellido">Apellido</label>
-        </div>
-      </div>
-      <div class="row">
-          <label for="modificar_fecha">Fecha de nacimiento</label>
-        <div class="input-field col s12" >
-          <input id= "modificar_fecha" type="date" class="datepicker">
-        </div>
-      
-      <div class="row">
-        <div class="input-field col s6">
-          <select>
-            <option value="" disabled selected>Sexo</option>
-            <option value="1">Femenino</option>
-            <option value="2">Masculino</option>
-          </select>
-          <label>Sexo</label>
-    </div>
-       <div class="input-field col s6">
-          <select>
-            <option value="" disabled selected>Semestre</option>
-            <option value="modificar_semestre_1">1</option>
-            <option value="modificar_semestre_2">2</option>
-            <option value="modificar_semestre_3">3</option>
-            <option value="modificar_semestre_4">4</option>
-            <option value="modificar_semestre_5">5</option>
-            <option value="modificar_semestre_6">6</option>
-            <option value="modificar_semestre_7">7</option>
-            <option value="modificar_semestre_8">8</option>
-            <option value="modificar_semestre_9">9</option>
-            <option value="modificar_semestre_10">10</option>
-            <option value="modificar_semestre_11">11</option>
-            <option value="modificar_semestre_12">12</option>
-            <option value="modificar_semestre_13">13</option>
-            <option value="modificar_semestre_14">14</option>
-          </select>
-          <label>Semestre</label>
-    </div>
-      </div>
-      
-       <div class="input-field col s6">
-    <select>
-      <option value="" disabled selected>Universidad</option>
-      <option value="1">Tecnológico de Monterrey (Tec)</option>
-      <option value="2">Universidad de Monterrey (UDEM)</option>
-    </select>
-    <label>Universidad</label>
-  </div>
-    <div class="input-field col s6">
-       <input placeholder="Matrícula" id="matrícula_modificar" type="text" class="validate">
-       <label for="matrícula_modificar">Matrícula</label>
-    </div>
-    <div class="row">
-     <div class="input-field col s6">
-       <input placeholder="Departamento" id="departamento" type="text" class="validate">
-         <label for="departamento">Departamento</label>
-       </div>
-       <div class="input-field col s6">
-         <input placeholder="Periodo" id="periodo" type="text" class="validate">
-         <label for="periodo">Periodo</label>
-       </div>
-     </div>
-    </form>
-    <div class="input-field col s12">
-        <select>
-          <option value="" disabled selected>Escuela</option>
-          <option value="1">Alonso de León</option>
-          <option value="2">Viuda de Berardi</option>
-        </select>
-        <label>Escuela</label>
-      </div>
-  </div>
-    </div>
+      <div id="modificarPrestador" class="modal">
+        <div class="modal-content">
+          <h4>Modificar prestador de servicio</h4>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input value="Esteban" placeholder="Nombre" id="modificar_nombre" type="text" class="validate">
+                  <label for="modificar_nombre">Nombre</label>
+                </div>
+                <div class="input-field col s6">
+                  <input value="Arocha Ortuño" placeholder="Apellidos" id="modificar_apellido" type="text" class="validate">
+                  <label for="modificar_apellido">Apellido</label>
+                </div>
+              </div>
+              <div class="row">
+                <label for="modificar_fecha">Fecha de nacimiento</label>
+                <div class="input-field col s12" >
+                  <input value="11 October, 1996" id= "modificar_fecha" type="date" class="datepicker">
+                </div>
 
-    <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="Carrera" id="Carrera_modificar" type="text" class="validate">
-          <label for="carrera_modificar">Carrera</label>
-        </div>
-        <div class="input-field col s6">
-          <input placeholder="Celular" id="Celular_modificar" type="text" class="validate">
-          <label for="Celular_modificar">Celular</label>
-        </div>
-      </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <select>
+                        <option value="" disabled selected>Sexo</option>
+                        <option value="1">Femenino</option>
+                        <option value="2" selected>Masculino</option>
+                      </select>
+                      <label>Sexo</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <select>
+                        <option value="" disabled selected>Semestre</option>
+                        <option value="modificar_semestre_1">1</option>
+                        <option value="modificar_semestre_2">2</option>
+                        <option value="modificar_semestre_3" selected>3</option>
+                        <option value="modificar_semestre_4">4</option>
+                        <option value="modificar_semestre_5">5</option>
+                        <option value="modificar_semestre_6">6</option>
+                        <option value="modificar_semestre_7">7</option>
+                        <option value="modificar_semestre_8">8</option>
+                        <option value="modificar_semestre_9">9</option>
+                        <option value="modificar_semestre_10">10</option>
+                        <option value="modificar_semestre_11">11</option>
+                        <option value="modificar_semestre_12">12</option>
+                        <option value="modificar_semestre_13">13</option>
+                        <option value="modificar_semestre_14">14</option>
+                      </select>
+                      <label>Semestre</label>
+                    </div>
+                  </div>
 
-    <div class="row">
-        <div class="input-field col s6">
-          <input id="email_modificar" type="email" class="validate">
-          <label for="email_modificar">Email</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="email_modificar_2" type="email" class="validate">
-          <label for="email_modificar_2">Email</label>
-        </div>
-        </div>
+                  <div class="input-field col s6">
+                    <select>
+                      <option value="" disabled selected>Universidad</option>
+                      <option value="1" selected>Tecnológico de Monterrey (Tec)</option>
+                      <option value="2">Universidad de Monterrey (UDEM)</option>
+                    </select>
+                    <label>Universidad</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input value="A01153980" placeholder="Matrícula" id="matrícula_modificar" type="text" class="validate">
+                    <label for="matrícula_modificar">Matrícula</label>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input value="Tenologías Computacionales" placeholder="Departamento" id="departamento" type="text" class="validate">
+                      <label for="departamento">Departamento</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input value="Ag/Dic 2016" placeholder="Periodo" id="periodo" type="text" class="validate">
+                      <label for="periodo">Periodo</label>
+                    </div>
+                  </div>
+                  <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Escuela</option>
+                      <option value="1" selected>Alonso de León</option>
+                      <option value="2">Viuda de Berardi</option>
+                    </select>
+                    <label>Escuela</label>
+                  </div>
+            </form>
+              </div>
+          </div>
 
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="password_modificar" type="password" class="validate">
-          <label for="password_modificar">Password</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="repeat_password_modificar_2" type="password" class="validate">
-          <label for="repeat_password_modificar_2">Password</label>
-        </div>
-      </div>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input value="ITC" placeholder="Carrera" id="Carrera_modificar" type="text" class="validate">
+                  <label for="carrera_modificar">Carrera</label>
+                </div>
+                <div class="input-field col s6">
+                  <input value="8112345678" placeholder="Celular" id="Celular_modificar" type="text" class="validate">
+                  <label for="Celular_modificar">Celular</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <input value="stvio@mail.com" id="email_modificar" type="email" class="validate">
+                  <label for="email_modificar">Email</label>
+                </div>
+              </div>
+
     <div class="modal-footer">
       <div class="row" align = "center">
-      <div class="col s4">
-        <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #448aff blue darken-2">Modificar</a>
-      </div>
-      <div class="col s4">
-        <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #d84315 deep-orange darken-3">Eliminar</a>
-      </div>
-      <div class="col s4">
-        <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #d84315 deep-orange darken-3">Cancelar</a>
+        <div class="col s4">
+          <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #448aff blue darken-2">Modificar</a>
+        </div>
+        <div class="col s4">
+          <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #d84315 deep-orange darken-3">Eliminar</a>
+        </div>
+        <div class="col s4">
+          <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #d84315 deep-orange darken-3">Cancelar</a>
+        </div>
       </div>
     </div>
     </div>
-  </div>
-  </div>
-  </div>
+    </div>
+    </div>
 
  <!--   Icon Section   -->
     
