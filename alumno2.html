@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Águilas Guadalupanas</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="blue accent-2" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="logo.jpeg" style="width:80px;height:auto;"/></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="login2.html"><i class="material-icons">input</i></a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="login2.html"><i class="material-icons">input</i></a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <h1 class="header center indigo-text">Esteban Arocha Ortuño</h1>
+      <div class="row center">
+        <div class="row">
+            <div class="col s3">
+                <h5 class="blue-text">Matrícula</h5>
+                <p>A01153980</p>
+            </div>
+            <div class="col s3">
+                <h5 class="blue-text">Universidad</h5>
+                <p>Tec de Monterrey</p>
+            </div>
+            <div class="col s3">
+                <h5 class="blue-text">Carrera</h5>
+                <p>ITC</p>
+            </div>
+            <div class="col s3">
+                <h5 class="blue-text">Departamento</h5>
+                <p>Tecnología Computacionales</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s3">
+                <h5 class="blue-text">Número</h5>
+                <p>8112345678</p>
+            </div>
+            <div class="col s3">
+                <h5 class="blue-text">Correo</h5>
+                <p>stvio@mail.com</p>
+            </div>
+            <div class="col s3">
+                <h5 class="blue-text">Nacimiento</h5>
+                <p>11 Octubre, 1996</p>
+            </div>
+            <div class="col s3">
+                <h5 class="blue-text">Semestre</h5>
+                <p>3</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s3">
+                <h5 class="blue-text">Escuela</h5>
+                <p>Alonso de León</p>
+            </div>
+            <div class="col s3">
+                <h5 class="blue-text">Equipo Escuela</h5>
+                <p>5</p>
+            </div>
+            <div class="col s3">
+                <h5 class="blue-text">Equipo Video</h5>
+                <p>2</p>
+            </div>
+            <div class="col s3">
+                <h5 class="blue-text">Periodo</h5>
+                <p>Ag/Dic-2016</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="horasTotales">
+                <h5 class="blue-text">Horas totales</h5>
+                <h3>20</h3>
+            </div>
+        </div>
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <h3 class="indigo-text">Actividades</h3>
+                <table class="bordered highlight">
+                <thead>
+                    <tr>
+                        <th data-field="nombre">Nombre</th>
+                        <th data-field="calificacion">Calificación</th>
+                        
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Investigación</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            <div class="col s6">
+                <h3 class="indigo-text">Eventos</h3>
+                <table class="bordered highlight">
+                <thead>
+                    <tr>
+                        <th data-field="nombre">Nombre</th>
+                        <th data-field="asistencia">Asistencia</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Primer clase</td>
+                        <td><i class="material-icons">check</i></td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+  <!-- Modal Structure -->
+  <div id="modificarPrestador" class="modal">
+    <div class="modal-content">
+      <h4>Modificar prestador de servicio</h4>
+      <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Nombre" id="modificar_nombre" type="text" class="validate">
+          <label for="modificar_nombre">Nombre</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Apellidos" id="modificar_apellido" type="text" class="validate">
+          <label for="modificar_apellido">Apellido</label>
+        </div>
+      </div>
+      <div class="row">
+          <label for="modificar_fecha">Fecha de nacimiento</label>
+        <div class="input-field col s12" >
+          <input id= "modificar_fecha" type="date" class="datepicker">
+        </div>
+      
+      <div class="row">
+        <div class="input-field col s6">
+          <select>
+            <option value="" disabled selected>Sexo</option>
+            <option value="1">Femenino</option>
+            <option value="2">Masculino</option>
+          </select>
+          <label>Sexo</label>
+    </div>
+       <div class="input-field col s6">
+          <select>
+            <option value="" disabled selected>Semestre</option>
+            <option value="modificar_semestre_1">1</option>
+            <option value="modificar_semestre_2">2</option>
+            <option value="modificar_semestre_3">3</option>
+            <option value="modificar_semestre_4">4</option>
+            <option value="modificar_semestre_5">5</option>
+            <option value="modificar_semestre_6">6</option>
+            <option value="modificar_semestre_7">7</option>
+            <option value="modificar_semestre_8">8</option>
+            <option value="modificar_semestre_9">9</option>
+            <option value="modificar_semestre_10">10</option>
+            <option value="modificar_semestre_11">11</option>
+            <option value="modificar_semestre_12">12</option>
+            <option value="modificar_semestre_13">13</option>
+            <option value="modificar_semestre_14">14</option>
+          </select>
+          <label>Semestre</label>
+    </div>
+      </div>
+      
+       <div class="input-field col s6">
+    <select>
+      <option value="" disabled selected>Universidad</option>
+      <option value="1">Tecnológico de Monterrey (Tec)</option>
+      <option value="2">Universidad de Monterrey (UDEM)</option>
+    </select>
+    <label>Universidad</label>
+  </div>
+    <div class="input-field col s6">
+       <input placeholder="Matrícula" id="matrícula_modificar" type="text" class="validate">
+       <label for="matrícula_modificar">Matrícula</label>
+    </div>
+    <div class="row">
+     <div class="input-field col s6">
+       <input placeholder="Departamento" id="departamento" type="text" class="validate">
+         <label for="departamento">Departamento</label>
+       </div>
+       <div class="input-field col s6">
+         <input placeholder="Periodo" id="periodo" type="text" class="validate">
+         <label for="periodo">Periodo</label>
+       </div>
+     </div>
+    </form>
+    <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>Escuela</option>
+          <option value="1">Alonso de León</option>
+          <option value="2">Viuda de Berardi</option>
+        </select>
+        <label>Escuela</label>
+      </div>
+  </div>
+    </div>
+
+    <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Carrera" id="Carrera_modificar" type="text" class="validate">
+          <label for="carrera_modificar">Carrera</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Celular" id="Celular_modificar" type="text" class="validate">
+          <label for="Celular_modificar">Celular</label>
+        </div>
+      </div>
+
+    <div class="row">
+        <div class="input-field col s6">
+          <input id="email_modificar" type="email" class="validate">
+          <label for="email_modificar">Email</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="email_modificar_2" type="email" class="validate">
+          <label for="email_modificar_2">Email</label>
+        </div>
+        </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="password_modificar" type="password" class="validate">
+          <label for="password_modificar">Password</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="repeat_password_modificar_2" type="password" class="validate">
+          <label for="repeat_password_modificar_2">Password</label>
+        </div>
+      </div>
+    <div class="modal-footer">
+      <div class="row" align = "center">
+      <div class="col s4">
+        <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #448aff blue darken-2">Modificar</a>
+      </div>
+      <div class="col s4">
+        <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #d84315 deep-orange darken-3">Eliminar</a>
+      </div>
+      <div class="col s4">
+        <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat #d84315 deep-orange darken-3">Cancelar</a>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+ <!--   Icon Section   -->
+    
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+  </div>
+
+  <footer class="page-footer blue accent-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Águilas Guadalupanas</h5>
+          <p class="grey-text text-lighten-4">La misión de Águilas guadalupanas es...</p>
+
+
+        </div>
+        
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Powered by <a class="orange-text text-lighten-3" href="#">TechLabs</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

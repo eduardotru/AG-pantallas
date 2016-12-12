@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
+  <title>Águilas Guadalupanas</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -148,31 +148,31 @@
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
-          <input placeholder="Nombre del evento" id="nombre_evento" type="text" class="validate">
+          <input value="Evento #1: Primera visita a la escuela." placeholder="Nombre del evento" id="nombre_evento" type="text" class="validate">
           <label for="nombre_evento">Nombre del evento</label>
         </div>
         <div class="input-field col s6">
-          <input placeholder="Calificación" id="Escala_calificacion" type="text" class="validate">
+          <input value="10" placeholder="Calificación" id="Escala_calificacion" type="text" class="validate">
           <label for="Escala_calificacion">Inserte la calificación máxima</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12" >
-            <textarea id="descripcion_evento" class="materialize-textarea" class="validate"></textarea>
+            <textarea id="descripcion_evento" class="materialize-textarea" class="validate">Esta es la primera ocasión del semestre en la que los prestadores de servicio irán a la la escuela asiganada.</textarea>
             <label for="descripcion_evento">Descripción del evento</label>
           </div>
       </div>
       <div class="row">
         <label for="fecha">Fecha del evento</label>
         <div class="input-field col s12" >
-            <input id= "fecha" type="date" class="datepicker">
+            <input value="12 November, 2016" id= "fecha" type="date" class="datepicker">
         </div>
       </div>
       <div class="input-field col s12">
     <select multiple>
       <option value="" disabled selected>Selecciona la universidad o alumno</option>
       <option value="1">Todos</option>
-      <option value="2">Tecnológico de Monterrey</option>
+      <option value="2" selected>Tecnológico de Monterrey</option>
       <option value="3">Universidad de Monterrey</option>
       <option value="4">Juan Pérez Ardeola</option>
     </select>
